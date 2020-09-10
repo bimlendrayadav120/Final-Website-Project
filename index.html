@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.header{
+			width: 1000px;
+			background-color: #FF9AE5;
+			overflow: hidden;
+			border-radius: 30px;
+			position: relative;
+			left: 12%;
+			top: 160px;
+		}
+		.header a{
+			float: left;
+			text-decoration: none;
+			font-size: 18px;
+			padding: 14px;
+			color: black;
+		}
+		.header a:hover{
+			background-color: #ddd;
+			color: black;
+		}
+		.header a.active{
+			background-color: #5EBCC3;
+		}
+		.main_header{
+			width: 100%;
+			border: 1px solid black;
+			height: 180px;
+	        background-color: #485763;
+		}
+		.input{
+			position: relative;
+			left: 230px;
+			bottom: 40px;
+			height: 30px;
+		}
+		.ProductItem_heading{
+			height: 30px;
+			background-color: #FFAF57;
+			text-align: center;
+		}
+		.paragraph_box{
+			width: 100%;
+			height: 500px;
+			background-color: #E4FFF3;
+			position: relative;
+			top: 40px;
+			padding: 20px;
+			box-shadow: 30px;
+		}
+		#text{
+			position: relative;
+			float: left;
+			right: 90px;
+			bottom: 160px;
+			margin: 20px;
+		}
+		#text1{
+			position: relative;
+			float: left;
+			bottom: 160px;
+			margin: 40px;
+			font-weight: normal;
+			font-family: "Times New Roman", Times, serif;
+		}
+		.bottom_division{
+			background-color: #2E2E54;
+			width: 100%;
+			height: 400px;
+		}
+		.bottom_text{
+			position: relative;
+			bottom: 120px;
+			left: 20px;
+			color: white;
+		}
+		a:hover{
+			background-color: black;
+		}
+		.offer{
+			text-decoration: none;
+			font-size: 20px;
+			color: #00FFF2;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="main_header">
+		<div class="header">
+		    <a class="active" href="Home">Home</a>
+		    <a href="about.html">About Us</a>
+		    <a href="Corporate&Wholesale.html">Corporate & Wholesale</a>
+		    <a href="payment.html">Payment</a>
+		    <a href="ContactForm.html">Contact</a>
+		    <a href="login.html">Login</a>
+		    <a href="signup.html">Sign Up</a>
+	    </div>
+	    <h1 style="position: relative; left: 199px; bottom: 60px; color: red;">Welome To World's Most Fashionable Online Shopping Center</h1>
+	    <input type="text" size="80px" placeholder="What's in your mind?" class="input">
+	    <button class="input">Search</button>
+	    <p><a class="offer" style="position: relative;left: 80%; bottom: 85px;" href="offer.html">Click Here<br>To get an offer</a></p>
+	</div>
+	<img style="width: 109px; height: 109px; position: relative; left: 40px; bottom: 140px;" src="company_logo.PNG">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="imageslider1.jpg" style="width:100%">
+            <div class="text">Caption one</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="imageslider2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="imageslider3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="imageslider4.jpg" style="width:100%">
+            <div class="text">Caption Four</div>
+        </div>
+	</div>
+	<br>
+	<div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+    </div>
+    <script>
+    	var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <br><br><br>
+    <div class="ProductItem_heading" style="border: 1px solid black; position: relative;top: 20px;">
+    	<span style="color: black;font-size: 20px;">Men's Fashion</span>
+    </div>
+     <div class="ProductItem_heading" style="border: 1px solid black; position: relative;top: 540px;">
+    	<span style="color: black;font-size: 20px;">Women's Fashion</span>
+    </div>
+    <div class="ProductItem_heading" style="border: 1px solid black; position: relative;top: 1049px;">
+    	<span style="color: black;font-size: 20px;">Babies & Toy's</span>
+    </div>
+    <div class="ProductItem_heading" style="border: 1px solid black; position: relative;top: 1549px;">
+    	<span style="color: black;font-size: 20px;">Electronic Devices</span>
+    </div>
+    <br>
+    <div style="position: relative;left: 20px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="men'sjeans1.PNG" width="60%">
+    	</a>
+    	<h1>Denim Jeans</h1>
+    	<p class="price">$20.99</p>
+    	<p>Elastic Denim Pants Slim Fit Jeans</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative; left: 40px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="men'sjeans2.PNG" width="51%">
+    	</a>
+    	<h1>Grunge Jeans</h1>
+    	<p class="price">$12.99</p>
+    	<p>Blue Grunge Design Jeans For Men</p>
+    	<p style="padding-right: 15px;"><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative;left: 60px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="men'sjeans3.PNG" width="56%">
+    	</a>
+    	<h1>Denim Jeans</h1>
+    	<p class="price">$30.99</p>
+    	<p>Light Blue Denim Ripped Jeans</p>
+    	<p style="padding-left: 15px;"><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative;left: 80px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="men'sjeans4.PNG" width="50%">
+    	</a>
+    	<h1>Zipper Jeans</h1>
+    	<p class="price">$20.99</p>
+    	<p>Denim Zipper Washing Drawstring Jeans</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <br><br><br>
+    <div style="position: relative;top: 100px;left: 20px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="women'sdress1.PNG" width="60%">
+    	</a>
+    	<h1>Navy Blue</h1>
+    	<p class="price">$10.99</p>
+    	<p>Navy Blue Crepe One Piece Dress</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative;top: 100px; left: 40px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="women'sdress2.PNG" width="57%">
+    	</a>
+    	<h1>Tie V-Neck</h1>
+    	<p class="price">$9.99</p>
+    	<p>Designed Semi Formal Top For Women</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative;top: 100px;left: 60px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="women'sdress3.PNG" width="58%">
+    	</a>
+    	<h1>LightGreen Kurti</h1>
+    	<p class="price">$18.99</p>
+    	<p>Dove Patterned Cotton fancy designer</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative;top: 100px;left: 80px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="women'sdress4.PNG" width="55%">
+    	</a>
+    	<h1>Red/Golden</h1>
+    	<p class="price">$109.99</p>
+    	<p>Saree With Unstitched Blouse For Women</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <br><br><br>
+    <div style="position: relative;top: 195px;right: 880px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="baby'sdress1.PNG" width="60%">
+    	</a>
+    	<h1>Blue Sweatshirt</h1>
+    	<p class="price">$9.99</p>
+    	<p>Navy Blue Space Printed Sweatshirt For Boys</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative;bottom: 235px; left: 343px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="baby'sdress2.PNG" width="52%">
+    	</a>
+    	<h1>Embroidered Sweater</h1>
+    	<p class="price">$12.99</p>
+    	<p>Yellow Butterfly Embroidered Sweater For Girls</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative;bottom: 235px; left: 363px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="baby'stoys1.PNG" width="69%">
+    	</a>
+    	<h1>Building Set</h1>
+    	<p class="price">$8.99</p>
+    	<p>Sembo Block Faomus Car Building Set</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative;bottom: 235px; left: 383px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="baby'stoys2.PNG" width="68%">
+    	</a>
+    	<h1>Building Block</h1>
+    	<p class="price">$15.99</p>
+    	<p>Silicone Building Block</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <br><br><br>
+    <div style="position: relative;top: 289px;right: 880px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="laptop1.PNG" width="60%">
+    	</a>
+    	<h1>DELL XPS</h1>
+    	<p class="price">$2236.99</p>
+    	<p>7390/i7-10510U/16 GB/512 GB SSD/13.3" 4K UltraHD Touch/ Graphics</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative; bottom: 145px; left: 345px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="mobile1.PNG" width="60%">
+    	</a>
+    	<h1>Huawei Y9s</h1>
+    	<p class="price">$308.99</p>
+    	<p>6GB RAM,128GB ROM,6.59inches Display,Selfie Camera, Fingerprint</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative; bottom: 145px;left: 370px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="camera1.PNG" width="70%">
+    	</a>
+    	<h1>Canon EOS</h1>
+    	<p class="price">$727.99</p>
+    	<p>24.1MP Digital SLR Camera</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <div style="position: relative;bottom: 146px; left: 390px;" class="cart_item1">
+    	<a href="moreitems.html">
+    		<img src="gamingconsole1.PNG" width="63%">
+    	</a>
+    	<h1>Gaming-Console</h1>
+    	<p class="price">$20.99</p>
+    	<p>360 Wired Controller For Windows & Xbox</p>
+    	<p><button>Add to Cart</button></p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="paragraph_box">
+        <span id="text"><h3>Online Shopping in Nepal: reliable, free delivery in Nepal and affordable !</h3></span>
+        <p id="text1"><span style="font-size: 20px;color: #FF5D00;">Online Shopping in Nepal</span> is becoming more and more popular as you can enjoy shopping from the comfort of your home. Being open 24x7 the shopping possibilities are endless. fashionable shopping.com is the solution for any online shopping in Kathmandu, Bhaktapur, Lalitpur and any other major city in Nepal.Reliable, affordable and offering <span style="font-size: 20px;color: #FF5D00;">Free home delivery inside Nepal,</span> in other words Fashionable shopping.com. <br><br>Shopping has never been so easy and fun, with our user-friendly online shopping platform, customers can browse and directly purchase their desired products using a secure and safe online payment system. Not only the major cities in Kathmandu but providing online shopping in Pokhara, Butwal, Chitwan, Dharan, Surkhet, Birgunj, Biratnagar, Jhapa and Nepalgunj, Fashionable Shopping has reached many shoppers in Nepal. With a fast and free delivery within 24 hours.This platform proves to be reliable and affordable.<br><br><span style="font-size: 25px;font-weight: bold;">Send valentine's day gifts to Nepal</span><br><br>Send valentine's day gifts to Nepal, Fashionable Shopping customers can use online shopping in Nepal from Australia, USA, Europe and Asia. Purchase gifts, products, accessories and clothes, then let it be delivered to friends or family inside Nepal. Having not only an online presence, Fashionable Shopping has also an online gift shop in Kathmandu Nepal. Using the online gift shop in Kathmandu Nepal is easy and it showcases all our special and unique products. <span style="font-size: 20px;color: #FF5D00;">Fashionable Shopping in Nepal provides the perfect opportunity for those living abroad but still want to send gifts to Nepal.</span> Ideal during the festival seasons, customers can send birthday gifts, wedding presents, mother’s day, father’s day gifts, Valentine’s Day gifts to Nepal. The newest gadgets, products, accessories and cosmetics are always available with Fashionable Shopping. Showcasing and offering various promo discounts online shopping in Nepal has never been easier and interesting. <span style="font-size: 20px;color: #FF5D00;">Offering not only famous brands but also those unique products</span> we cannot find in any other shop are available at Fashionable Shopping. Making your shopping experience more fun and send gifts to Nepal.</p>
+    </div>
+    <div class="bottom_division">
+    	<p class="bottom_text"><span style="font-size: 20px; font-weight: bold;">Let Us Help You</span><br><br><a style="color: white;text-decoration: none;" href="">Home</a><br><br><a style="color: white; text-decoration: none;" href="about.html">About</a><br><br><a style="color: white;text-decoration: none;" href="Terms&Conditions.html">Terms And conditions</a><br><br><a style="color: white;text-decoration: none;" href="order.html">How to order</a><br><br><a style="color: white;text-decoration: none;" href="return.html">Return policy</a></p>
+    	<p style="position: relative;bottom: 349px; left: 480px; color: white;" class="bottom_text"><span style="font-size: 20px; font-weight: bold;">Contact Us</span><br><br>Address<br><span style="font-size: 12px;">Baneshwar,Kathamandu</span><br><span style="font-size: 12px;">Nepal</span><br><br>Contact No<br><span style="font-size: 12px;">+9779812345678<br>012345678</span><br><br>Email Id<br><span style="font-size: 12px;">fashionable99@gmail.com</span></p>
+    	<p style="position: relative;bottom: 600px; left: 940px;"><span style="font-size: 20px; color: white;font-weight: bold;">Location</span><br><br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14130.924577443635!2d85.33106356842927!3d27.694703324271508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199a06c2eaf9%3A0xc5670a9173e161de!2sNew%20Baneshwor%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1599281810166!5m2!1sen!2snp" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+    </div>
+</body>
+</html>
